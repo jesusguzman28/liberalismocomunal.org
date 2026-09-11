@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "ensayos": "node scripts/build-ensayos.mjs",
+    "prebuild": "node scripts/build-ensayos.mjs",
     "build": "vite build",
     "preview": "vite preview"
   },

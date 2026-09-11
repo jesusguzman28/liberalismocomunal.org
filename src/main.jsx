@@ -79,6 +79,7 @@ function App() {
         <div className={`nav-links ${open ? 'is-open' : ''}`}>
           <a href="#doctrina" onClick={close}>Liberalismo peruano</a>
           <a href="#biblioteca" onClick={close}>Biblioteca</a>
+          <a href="/ensayos/" onClick={close}>Ensayos</a>
           <a href="#libro" onClick={close}>El libro</a>
           <a href="#agenda" onClick={close}>Agenda</a>
           <a href="#participa" onClick={close}>Participa</a>
@@ -119,7 +120,7 @@ function App() {
 
       <section id="participa" className="participate section-light"><div className="container participate-grid"><div><p className="eyebrow"><span></span> Participa</p><h2>Escríbenos<br /><i>desde tu región.</i></h2><p className="participate-note">Si quieres recibir los textos y participar en las conversaciones del proyecto, escríbenos directamente.</p></div><div className="join-card"><p>Recibe nuevos artículos, debates y convocatorias.</p><a className="button button-dark" href="mailto:hola@liberalismocomunal.org?subject=Quiero%20participar">Escribir a hola@liberalismocomunal.org <ArrowUpRight size={17}/></a></div></div></section>
     </main>
-    <footer><div className="container footer-inner"><a className="brand footer-brand" href="#inicio"><span className="brand-mark">↗</span><span>liberalismo<br/><em>comunal</em></span></a><p>Pedro Jesús Guzmán Ramos · Liberalismo peruano desde abajo</p><div><a href="#doctrina">Doctrina</a><a href="#autor">Autor</a><a href="#biblioteca">Biblioteca</a><a href="/proyecto/">Proyecto</a><a href="/contacto/">Contacto</a><a href="/privacidad/">Privacidad</a><a href="/aviso-legal/">Aviso legal</a></div></div></footer>
+    <footer><div className="container footer-inner"><a className="brand footer-brand" href="#inicio"><span className="brand-mark">↗</span><span>liberalismo<br/><em>comunal</em></span></a><p>Pedro Jesús Guzmán Ramos · Liberalismo peruano desde abajo</p><div><a href="#doctrina">Doctrina</a><a href="#autor">Autor</a><a href="#biblioteca">Biblioteca</a><a href="/ensayos/">Ensayos</a><a href="/proyecto/">Proyecto</a><a href="/contacto/">Contacto</a><a href="/privacidad/">Privacidad</a><a href="/aviso-legal/">Aviso legal</a></div></div></footer>
   </>
 }
 
