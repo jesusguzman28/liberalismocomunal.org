@@ -3,28 +3,28 @@ title: "El poder quiso un atajo. Esta vez no le salió"
 fecha: 2026-09-11
 hora: "08:55"
 autor: "Pedro Jesús Guzmán Ramos"
-resumen: "Seis comisiones del Congreso, con votaciones ajustadas, rechazaron dar facultades legislativas al Ejecutivo para decretar en minería, trabajo, seguridad y justicia sin debate. Los votos y las materias, con nombre y número."
+resumen: "Seis comisiones frenaron las facultades legislativas de Fujimori. Dos las preside su propio partido. Los votos, los nombres y las bancadas, sin adornos."
 ---
 
-28 de agosto: el Ejecutivo pide al Congreso facultades legislativas por 120 días. En la práctica, eso significa poder emitir decretos legislativos —con rango de ley, sin pasar por el pleno ni por un debate público— en minería, energía, infraestructura, trabajo, seguridad ciudadana, justicia penal y penitenciaria, y fortalecimiento de MYPES.
+El 28 de agosto, el gobierno de Keiko Fujimori pidió al Congreso 120 días para decretar directamente, sin pleno, sin comisión y sin nadie que le lleve la contra en público, en minería, energía, infraestructura, trabajo, seguridad ciudadana, justicia penal y penitenciaria, y MYPES.
 
-Entre el 8 y el 10 de septiembre, seis comisiones de la Cámara de Diputados dijeron que no. Y los números importan:
+Entre el 8 y el 10 de septiembre, seis comisiones le cerraron la puerta, y no fue solo la oposición gritando desde su trinchera de siempre, sino su propio partido, que controla dos de esas comisiones. Estos son los votos:
 
-- **Energía y Minas**: 11 votos a favor de declarar "no viable" la delegación, 8 en contra.
-- **Ciencia, Tecnología y Ambiente**: el propio grupo de trabajo había calificado la delegación como técnicamente viable —para simplificación administrativa, eliminación de barreras burocráticas y transformación digital—. La comisión en pleno lo rechazó igual: 9 en contra, 7 a favor, 1 abstención.
-- **Trabajo y Seguridad Social**: rechazó el informe que calificaba de viable la delegación, con 10 votos en contra y 8 a favor.
-- **Justicia y Derechos Humanos**: aprobó el informe que recomienda no otorgar facultades en materia penal y penitenciaria, con 11 votos a favor y 4 en contra.
+- **Energía y Minas** votó 11 a 8 para declarar "no viable" el pedido. La preside Yenifer Paredes, de Juntos por el Perú (JP), investigada por presunta organización criminal en el entorno de Pedro Castillo, con una prisión preventiva de 30 meses que luego fue revocada.
+- **Ciencia, Tecnología y Sociedad Digital**, presidida por Diethell Columbus, de Fuerza Popular (FP), había calificado el pedido de técnicamente viable. El pleno lo rechazó igual, aunque por poco, 9 a 7, con 1 abstención.
+- **Trabajo y Seguridad Social**, también bajo control de FP, tumbó el informe que le abría la puerta al gobierno, 10 a 8.
+- **Justicia y Derechos Humanos**, presidida por JP, negó facultades en materia penal y penitenciaria, 11 a 4.
 
-Ninguna de esas votaciones fue aplastante. En dos comisiones, la diferencia fue de dos o tres votos. Esto no fue una condena unánime al Ejecutivo: fue una mayoría circunstancial que, comisión por comisión, decidió no delegar.
+Ninguna de esas votaciones fue aplastante; en dos de ellas la diferencia fue de apenas 2 o 3 votos. Esto no fue una condena al Ejecutivo, fue FP cortándole el paso a su propia presidenta en dos comisiones, mientras JP aprovechaba la ocasión en las otras dos.
 
 Y aun así, nadie merece aplauso.
 
-Pedir facultades legislativas no es pedir velocidad. Es pedir saltarse el mecanismo por el cual una norma que te afecta pasa, al menos, por un debate donde alguien puede oponerse en público y quedar registrado. Cuando ese salto se pide justo para minería, trabajo y seguridad —los tres sectores donde más se concentran los conflictos sociales del país—, el cálculo es evidente: son los temas donde el debate abierto cuesta más caro políticamente.
+Pedir facultades legislativas no es pedir velocidad, es pedir saltarse el único momento en que alguien con cámara y micrófono puede decirte que no en público. Ese salto se pidió justo para minería, trabajo y seguridad, los 3 sectores donde más sangra el país en conflictos sociales, ya que ahí es exactamente donde el debate abierto sale más caro.
 
-El Congreso tampoco votó por convicción. La Comisión de Ciencia y Tecnología calificó la delegación de viable y la rechazó de todos modos, por 9 votos contra 7. Eso no es un principio: es una correlación de fuerzas que, esta semana, le fue adversa al Ejecutivo por márgenes estrechos.
+Eso tampoco fue principio. FP bloqueó a su propio gobierno en Ciencia y en Trabajo porque esa semana les costaba menos que sostenerlo. JP, en cambio, encontró la ocasión perfecta para golpear sin mancharse, decir que defiende a las comunidades le sale gratis cuando el que pide el atajo es el gobierno rival.
 
-**El mecanismo importa más que el actor.** No defendemos al Congreso. No defendemos al Ejecutivo. Defendemos que ninguna norma sobre minería, trabajo o seguridad se apruebe sin el registro público de quién vota qué y por qué.
+**El mecanismo importa más que el actor.** No defendemos a FP ni a JP. Defendemos que ninguna norma sobre minería, trabajo o seguridad se apruebe sin el registro público de quién vota qué, por qué, y a nombre de qué partido.
 
-> Un decreto que evita el debate no ahorra tiempo. Ahorra la parte donde alguien podía negarse.
+> Un decreto que evita el debate no ahorra tiempo. Ahorra la parte donde alguien con nombre y apellido podía negarse.
 
-Faltan seis comisiones más —entre ellas Economía y Agrario, las que tocan más directo a productores y comunidades rurales— antes de que el expediente llegue a la Comisión de Constitución que preside Giannina Avendaño, de Juntos por el Perú, quien tendrá la última palabra técnica antes del pleno. Ahí se sabrá si el freno de esta semana fue un patrón o un accidente de correlación de votos.
+Faltan 6 comisiones más, entre ellas Economía y Agrario, antes de que el expediente llegue a la Comisión de Constitución que preside Giannina Avendaño, también de JP. Si esas dos también tumban el pedido, el patrón queda confirmado: a este gobierno no lo detiene ningún principio, lo detiene la aritmética de una bancada fragmentada que todavía no decide si le conviene más hundirlo o cobrarle caro cada favor.
