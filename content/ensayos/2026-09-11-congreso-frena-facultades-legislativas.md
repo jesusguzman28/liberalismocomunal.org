@@ -10,7 +10,7 @@ El 28 de agosto, el gobierno de Keiko Fujimori pidió al Congreso 120 días para
 
 Entre el 8 y el 10 de septiembre, seis comisiones le cerraron la puerta, y no fue solo la oposición gritando desde su trinchera de siempre, sino su propio partido, que controla dos de esas comisiones. Estos son los votos:
 
-- **Energía y Minas** votó 11 a 8 para declarar "no viable" el pedido. La preside Yenifer Paredes, de Juntos por el Perú (JP), investigada por presunta organización criminal en el entorno de Pedro Castillo, con una prisión preventiva de 30 meses que luego fue revocada.
+- **Energía y Minas** votó 11 a 8 para declarar "no viable" el pedido. La preside Yenifer Paredes, de Juntos por el Perú (JP).
 - **Ciencia, Tecnología y Sociedad Digital**, presidida por Diethell Columbus, de Fuerza Popular (FP), había calificado el pedido de técnicamente viable. El pleno lo rechazó igual, aunque por poco, 9 a 7, con 1 abstención.
 - **Trabajo y Seguridad Social**, también bajo control de FP, tumbó el informe que le abría la puerta al gobierno, 10 a 8.
 - **Justicia y Derechos Humanos**, presidida por JP, negó facultades en materia penal y penitenciaria, 11 a 4.
