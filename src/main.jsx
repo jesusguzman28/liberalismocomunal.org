@@ -35,6 +35,7 @@ const agenda = [
 const library = [
   ['Liberalismo Peruano', 'Historia, ideas y futuro', '/liberalismo-peruano/'],
   ['Liberalismo Comunal', 'La doctrina peruana de libertad desde abajo', '/liberalismo-comunal/'],
+  ['Genealogía', 'Dos siglos de ideas: de Sánchez Carrión a Elinor Ostrom', '/genealogia-liberalismo-comunal/'],
   ['Libertarismo en el Perú', 'Libertad individual y límites al poder', '/libertarismo-peru/'],
   ['Liberalismo económico', 'Mercado, propiedad y emprendimiento', '/liberalismo-economico-peru/'],
   ['Descentralización', 'Autonomía, presupuesto y territorio', '/descentralizacion-peru/'],
