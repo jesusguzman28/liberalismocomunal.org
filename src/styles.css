@@ -23,3 +23,5 @@
 /* La portada se recorta desde arriba para que siempre se lea el título. */
 .hero-art img{object-position:center top}
 @media(max-width:760px){.art-note{display:none}}
+a.sello-bitone.sello-bitone{display:inline-flex;align-items:center;gap:10px;min-height:44px;width:auto;margin:0;padding:6px 14px 6px 6px;border-radius:999px;background:#1A2044;color:#F4F1E8;text-decoration:none;border:0;font:500 14px/1.15 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;box-shadow:0 0 0 1px rgba(255,255,255,.12)}a.sello-bitone.sello-bitone:hover{filter:brightness(1.15);color:#F4F1E8}.sello-bitone svg{flex:none;display:block;width:32px;height:32px}.sello-bitone .sb-a,.sello-bitone .sb-b,.sello-bitone .sb-k,.sello-bitone strong{display:block}.sello-bitone .sb-k{font-size:11px;opacity:.75}.sello-bitone strong{font-weight:800;letter-spacing:.04em;font-size:15px;color:inherit}.sello-bitone .sb-b{padding-left:10px;border-left:1px solid rgba(244,241,232,.25);font-size:12px;opacity:.85}.pie-sello{grid-column:1/-1;margin-top:10px}
+.footer-sello{margin-top:22px;display:flex;justify-content:center}.author-route-footer .sello-bitone{margin-top:0}
