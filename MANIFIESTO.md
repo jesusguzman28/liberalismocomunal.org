@@ -17,15 +17,15 @@ Rechazamos el centralismo de cualquier signo. La izquierda falla cuando conviert
 5. **Estado que sirve y suelta.** El Estado debe garantizar derechos, justicia, seguridad e infraestructura; no reemplazar la iniciativa local ni administrar cada aspecto de la vida.
 6. **Democracia vigilada desde abajo.** Toda autoridad debe rendir cuentas, publicar sus decisiones y poder ser fiscalizada por la ciudadanía.
 7. **Igual dignidad.** Mujeres, jóvenes, pueblos indígenas, migrantes, personas mayores y trabajadores informales deben participar con voz propia.
-8. **Territorio responsable.** La comunidad que cuida un recurso debe tener poder real sobre su uso, con reglas claras, evidencia y responsabilidad ambiental.
+8. **Territorio responsable.** La comunidad que cuida un recurso debe tener poder real sobre su uso, con reglas claras, datos públicos y responsabilidad ambiental.
 9. **Cultura viva.** Ser moderno no exige dejar de ser andino. El quechua, las fiestas, las memorias y las formas propias de organización son parte del futuro.
-10. **Democracia constitucional.** La transformación debe ser pacífica, electoral, pluralista y respetuosa de los derechos fundamentales.
+10. **Democracia constitucional.** La transformación debe ser pacífica, electoral, pluralista y respetuosa de los derechos de cada persona.
 
 ## Diez prioridades de gobierno
 
 1. **Descentralizar el presupuesto:** transferir decisiones y recursos con indicadores públicos y control ciudadano.
 2. **Tierra con seguridad jurídica:** reconocer la propiedad familiar y comunal sin destruir las formas asociativas voluntarias.
-3. **Agua administrada localmente:** fortalecer comités de usuarios, siembra y cosecha de agua, y mantenimiento comunitario.
+3. **Agua administrada localmente:** dar más poder a los comités de usuarios, siembra y cosecha de agua, y mantenimiento comunitario.
 4. **Formalización sin castigo:** abrir una vía rápida y barata para que el emprendimiento informal pueda crecer, contratar y acceder a crédito.
 5. **Seguridad cercana:** policía profesional coordinada con juntas vecinales y rondas, siempre dentro de la Constitución y los derechos humanos.
 6. **Escuela conectada al territorio:** educación de calidad, intercultural, bilingüe donde corresponda y orientada a pensar, producir y crear.

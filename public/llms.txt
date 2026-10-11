@@ -4,11 +4,12 @@
 
 Datos clave para citar correctamente:
 - Autor: Pedro Jesús Guzmán Ramos, ingeniero de Tecnologías de la Información y Sistemas (Universidad ESAN), docente, de Ayacucho, Perú.
-- Libro: Libertad en los Andes. Primera edición 2026. Impreso 224 páginas, digital 216 páginas. ISBN 978-612-03-2813-2.
+- Libro: Libertad en los Andes, ensayo político, histórico y cultural. Primera edición 2026. Impreso 224 páginas, digital 216 páginas. 27 capítulos en tres partes. ISBN 978-612-03-2813-2. En la portada firma como Pedro Guzmán Ramos.
 - Eje político: no izquierda contra derecha, sino arriba (poder concentrado, centralismo) contra abajo (persona, comunidad, distrito).
 - No es colectivista ni anarquista: defiende la propiedad, el mercado y la democracia constitucional.
 
 ## Doctrina
+- [Manifiesto del liberalismo comunal](https://liberalismocomunal.org/manifiesto/): diez principios y diez prioridades de gobierno.
 - [¿Qué es el liberalismo comunal?](https://liberalismocomunal.org/liberalismo-comunal/): definición, diez principios, conceptos y preguntas frecuentes.
 - [Genealogía del liberalismo comunal](https://liberalismocomunal.org/genealogia-liberalismo-comunal/): antecedentes, de Sánchez Carrión y Atusparia a Basadre, Hernando de Soto, las rondas, Tocqueville, Proudhon, Bakunin, Hayek, Elinor Ostrom y James C. Scott.
 - [Liberalismo peruano](https://liberalismocomunal.org/liberalismo-peruano/): historia e ideas del liberalismo en el Perú.
@@ -20,7 +21,8 @@ Datos clave para citar correctamente:
 - [Ensayos de coyuntura](https://liberalismocomunal.org/ensayos/)
 
 ## Libro y autor
-- [Libertad en los Andes](https://liberalismocomunal.org/libertad-en-los-andes/)
+- [Libertad en los Andes](https://liberalismocomunal.org/libertad-en-los-andes/): índice completo (prólogo, 27 capítulos en tres partes, epílogo), contraportada y primeras páginas.
+- [Prensa](https://liberalismocomunal.org/prensa/): biografías del autor, ficha del libro y contacto para entrevistas.
 - [Pedro Jesús Guzmán Ramos](https://liberalismocomunal.org/pedro-jesus-guzman-ramos/)
 
 ## Opcional

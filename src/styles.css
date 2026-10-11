@@ -19,3 +19,7 @@
 .source-link{display:inline-flex!important;align-items:center;background:var(--ochre);color:var(--brown)!important;padding:10px 12px;margin-top:12px;font:700 11px 'DM Mono',monospace!important;border:1px solid var(--ochre);text-decoration:none}.source-link:hover{background:var(--paper);border-color:var(--paper)}
 .research-route article b a,.research-route article p a{color:var(--ochre);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}.research-route article b a:hover,.research-route article p a:hover{color:var(--paper)}.source-links{display:flex;flex-wrap:wrap;gap:8px}
 @media(max-width:760px){.author-route-nav>div{gap:10px;font-size:10px}.author-route-hero{display:block;padding:70px 0}.author-route-photo{width:220px;height:220px;margin:55px auto 0}.profile-route,.book-route{display:block;margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px}.profile-route>div+div{margin-top:30px}.author-route-section{padding:70px 0}.research-grid{display:block;margin-top:35px}.research-grid article{margin-top:30px}.book-route-cover{width:75%;margin:0 auto 55px}.book-route h2{font-size:54px}.author-route-project{padding:75px 0}.author-route-footer{display:block}.author-route-footer a{display:block;margin-top:12px}}
+
+/* La portada se recorta desde arriba para que siempre se lea el título. */
+.hero-art img{object-position:center top}
+@media(max-width:760px){.art-note{display:none}}

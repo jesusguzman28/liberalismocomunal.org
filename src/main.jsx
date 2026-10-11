@@ -10,13 +10,11 @@ const principles = [
   { icon: Scale, number: '04', title: 'Orden sin amo', text: 'La libertad no significa ausencia de reglas. Significa reglas cercanas, legítimas y vigiladas por quienes viven sus consecuencias.' },
 ]
 
-const chapters = [
-  ['01', 'Libertad no es egoísmo', 'El ayni ya lo sabía'],
-  ['02', 'Orden sin amo', 'Por qué la feria funciona y el trámite no'],
-  ['03', 'El verdadero patrón', 'El centralismo decide, los Andes pagan'],
-  ['04', 'Tierra y capital', 'La tierra muerta vuelve a vivir'],
-  ['05', 'Autogobierno local', 'Decidir cerca, decidir bien'],
-  ['06', 'El celular rompe el cerco', 'Tecnología para descentralizar'],
+// Las tres partes de Libertad en los Andes, tal como están en el índice del libro.
+const parts = [
+  ['I', 'Fundamentos', 'Qué es la libertad y quién la pisa', 'Capítulos 1 al 5'],
+  ['II', 'Los pilares', 'Tierra, justicia, salud, escuela, fe y cultura', 'Capítulos 6 al 15'],
+  ['III', 'El Perú que se gobierna a sí mismo', 'Agua, minería, mujeres, migración, seguridad y Lima', 'Capítulos 16 al 27'],
 ]
 
 const agenda = [
@@ -40,7 +38,8 @@ const library = [
   ['Liberalismo económico', 'El emprendedor informal, la propiedad y el mercado', '/liberalismo-economico-peru/'],
   ['Descentralización', 'Que el poder y la plata bajen al distrito', '/descentralizacion-peru/'],
   ['Ensayos', 'La coyuntura peruana leída desde abajo', '/ensayos/'],
-  ['Libertad en los Andes', 'El libro que abre el camino', '/libertad-en-los-andes/'],
+  ['Manifiesto', 'Diez principios y diez prioridades para el Perú', '/manifiesto/'],
+  ['Libertad en los Andes', 'Índice, contraportada y primeras páginas', '/libertad-en-los-andes/'],
 ]
 
 const topicPages = {
@@ -79,10 +78,10 @@ function App() {
         <a className="brand" href="#inicio" onClick={close}><span className="brand-mark">↗</span><span>liberalismo<br/><em>comunal</em></span></a>
         <button className="menu-btn" onClick={() => setOpen(!open)} aria-label={open ? 'Cerrar menú' : 'Abrir menú'} aria-expanded={open}>{open ? <X /> : <Menu />}</button>
         <div className={`nav-links ${open ? 'is-open' : ''}`}>
-          <a href="#doctrina" onClick={close}>Liberalismo peruano</a>
-          <a href="#biblioteca" onClick={close}>Biblioteca</a>
+          <a href="/liberalismo-comunal/" onClick={close}>Doctrina</a>
+          <a href="/manifiesto/" onClick={close}>Manifiesto</a>
           <a href="/ensayos/" onClick={close}>Ensayos</a>
-          <a href="/libertad-en-los-andes/" onClick={close}>El libro</a>
+          <a href="/libertad-en-los-andes/" onClick={close}>Libertad en los Andes</a>
           <a href="#agenda" onClick={close}>Agenda</a>
           <a href="#participa" onClick={close}>Participa</a>
           <a className="nav-cta" href="#manifiesto" onClick={close}>Nuestra posición <ArrowUpRight size={16}/></a>
@@ -97,32 +96,32 @@ function App() {
           <h1>La libertad<br /><i>ya era nuestra.</i></h1>
           <p className="hero-lead">Nadie la trajo de afuera. Estaba en el ayni, en la minka, en la feria del domingo y en la ronda que cuida el pueblo de noche.</p>
           <p className="hero-signature">Pedro Jesús Guzmán Ramos <span>·</span> autor de Libertad en los Andes</p>
-          <div className="hero-actions"><a className="button button-dark" href="#manifiesto">Conocer la doctrina <ArrowUpRight size={17}/></a><a className="text-link" href="#libro">Explorar el libro <span>↓</span></a></div>
+          <div className="hero-actions"><a className="button button-dark" href="#manifiesto">Conocer la doctrina <ArrowUpRight size={17}/></a><a className="text-link" href="#libro">Ver Libertad en los Andes <span>↓</span></a></div>
         </div>
         <div className="hero-art" aria-label="Portada de Libertad en los Andes">
-          <img src="/tapa-libertad.png" alt="Personas construyendo un muro en los Andes" />
+          <img src="/tapa-libertad.webp" alt="Portada de Libertad en los Andes: comuneros levantando un muro de piedra en la puna" width="559" height="794" />
           <div className="hero-art-caption"><b>LIBERTAD EN LOS ANDES</b><span>Pedro Jesús Guzmán Ramos</span></div>
           <span className="art-note">AYNI<br /><small>hoy por ti,<br />mañana por mí</small></span>
         </div>
       </section>
 
-      <section id="manifiesto" className="manifesto section-dark"><div className="container manifesto-grid"><p className="eyebrow warm"><span></span> La idea central</p><div><blockquote>"No venimos a importar la libertad. Venimos a reconocerla donde ya estaba."</blockquote><p className="manifesto-text">El libro sale a buscarla al campo, a la feria, al comité de riego, a las rondas y a la chacra con título o sin él. Liberalismo Comunal toma esa tesis y la convierte en propuesta política para el Perú.</p><a className="light-link" href="#autor">Sobre el autor <ArrowUpRight size={16}/></a></div></div></section>
+      <section id="manifiesto" className="manifesto section-dark"><div className="container manifesto-grid"><p className="eyebrow warm"><span></span> La idea central</p><div><blockquote>"No venimos a importar la libertad. Venimos a reconocerla donde ya estaba."</blockquote><p className="manifesto-text"><em>Libertad en los Andes</em> sale a buscarla al campo, a la feria, al comité de riego, a las rondas y a la chacra con título o sin él. Liberalismo Comunal toma esa tesis y la convierte en propuesta política para el Perú.</p><a className="light-link" href="#autor">Sobre el autor <ArrowUpRight size={16}/></a></div></div></section>
 
       <section id="doctrina" className="doctrine section-light"><div className="container"><div className="section-intro"><p className="eyebrow"><span></span> La doctrina</p><h2>Libertad y<br /><i>comunidad.</i></h2><p>Del liberalismo peruano heredamos lo básico, que es la libertad individual, la propiedad, el mercado y el Estado de derecho. Lo que agregamos viene de los Andes. La comunidad a la que uno entra porque quiere, el ayni y la costumbre de decidir en asamblea lo que le toca al pueblo.</p></div><div className="axis"><div className="axis-top"><b>ARRIBA</b><span>Redistribución forzada · centralismo · decisiones lejanas</span></div><div className="axis-line"><div className="axis-dot"></div><div className="axis-arrow">↓</div></div><div className="axis-bottom"><b>ABAJO</b><span>Libertad · propiedad · comunidad · autogobierno</span></div></div></div></section>
 
       <section id="principios" className="principles section-paper"><div className="container"><div className="section-heading"><p className="eyebrow"><span></span> Principios</p><h2>Qué defendemos<br /><i>en el Perú.</i></h2></div><div className="principle-grid">{principles.map(({icon: Icon, number, title, text}) => <article className="principle" key={number}><div className="principle-top"><span>{number}</span><Icon size={22} strokeWidth={1.5}/></div><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
 
-      <section id="autor" className="author-section"><div className="container author-grid"><div className="author-portrait"><img src="/autor-pedro.jpg" alt="Pedro Jesús Guzmán Ramos" /></div><div><p className="eyebrow warm"><span></span> Sobre el autor</p><h2>Pedro Jesús<br /><i>Guzmán Ramos.</i></h2><p>Ayacuchano, ingeniero de Tecnologías de la Información y Sistemas por la Universidad ESAN y docente desde hace tres años. Escribe sobre el Perú tal como se ve desde la sierra.</p><p>Su libro <em>Libertad en los Andes</em> (2026) es el punto de partida de Liberalismo Comunal.</p><div className="social-links"><a href="https://x.com/pjguzmanr" target="_blank" rel="noreferrer">X / @pjguzmanr ↗</a><a href="https://www.linkedin.com/in/jesusguzman01/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/jesusguzman28" target="_blank" rel="noreferrer">GitHub ↗</a></div><a className="light-link" href="/pedro-jesus-guzman-ramos/">Ver página del autor <ArrowUpRight size={16}/></a></div></div></section>
+      <section id="autor" className="author-section"><div className="container author-grid"><div className="author-portrait"><img src="/autor-pedro.jpg" alt="Pedro Jesús Guzmán Ramos" /></div><div><p className="eyebrow warm"><span></span> Sobre el autor</p><h2>Pedro Jesús<br /><i>Guzmán Ramos.</i></h2><p>Ayacuchano, ingeniero de Tecnologías de la Información y Sistemas por la Universidad ESAN y docente desde hace tres años. Escribe sobre el Perú tal como se ve desde la sierra.</p><p>En <em>Libertad en los Andes</em> (2026) formuló el liberalismo comunal.</p><div className="social-links"><a href="https://x.com/pjguzmanr" target="_blank" rel="noreferrer">X / @pjguzmanr ↗</a><a href="https://www.linkedin.com/in/jesusguzman01/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/jesusguzman28" target="_blank" rel="noreferrer">GitHub ↗</a></div><a className="light-link" href="/pedro-jesus-guzman-ramos/">Ver página del autor <ArrowUpRight size={16}/></a></div></div></section>
 
       <section id="agenda" className="agenda section-light"><div className="container"><div className="agenda-intro"><div><p className="eyebrow"><span></span> Agenda política</p><h2>Propuestas para<br /><i>el Perú.</i></h2></div><p>Criticar al centralismo es fácil. Una doctrina seria tiene que decir qué hará con la tierra, el agua, la seguridad, la escuela y el presupuesto. Estas son las primeras prioridades del proyecto.</p></div><div className="agenda-grid">{agenda.map(([number, label, title, text]) => <article className="agenda-card" key={number}><span className="agenda-label">{number} · {label}</span><h3>{title}</h3><p>{text}</p></article>)}</div><div className="agenda-footer"><p>Las propuestas se revisarán con ciudadanos, comunidades, trabajadores, productores, jóvenes y autoridades locales.</p><a className="button button-dark" href="mailto:hola@liberalismocomunal.org?subject=Quiero%20participar">Participar <ArrowUpRight size={17}/></a></div></div></section>
 
       <section id="biblioteca" className="library section-paper"><div className="container"><div className="section-heading"><div><p className="eyebrow"><span></span> Textos y documentos</p><h2>Biblioteca<br /><i>del proyecto.</i></h2></div><p className="library-intro">Historia, conceptos y propuestas para entender el liberalismo peruano, el liberalismo comunal y los problemas del país.</p></div><div className="library-grid">{library.map(([title, description, href], index) => <a className="library-card" href={href} key={title}><span>{String(index + 1).padStart(2, '0')}</span><h3>{title}</h3><p>{description}</p><ArrowUpRight size={18}/></a>)}</div></div></section>
 
-      <section id="libro" className="book-section"><div className="container book-grid"><div className="book-cover"><img src="/tapa-libertad.png" alt="Portada del libro Libertad en los Andes, de Pedro Guzmán Ramos" /></div><div className="book-copy"><p className="eyebrow warm"><span></span> El libro</p><h2>Libertad<br /><i>en los Andes.</i></h2><p>De la feria al comité de riego. De las rondas campesinas a la propiedad de la tierra. El libro sigue una sola pregunta por los Andes: ¿qué ocurre cuando la gente puede decidir cerca?</p><div className="book-facts"><span>Pedro Jesús Guzmán Ramos</span><span>ISBN 978-612-03-2813-2</span><span>Impreso: 224 págs. · Digital: 216 págs.</span><span>2026</span></div><div className="chapter-list">{chapters.map(([n, title, sub]) => <div className="chapter" key={n}><span>{n}</span><div><b>{title}</b><small>{sub}</small></div><ArrowUpRight size={16}/></div>)}</div><div className="book-actions"><a className="button button-light" href="https://www.amazon.com/Libertad-en-los-Andes-Spanish-ebook/dp/B0HCXB894L/" target="_blank" rel="noreferrer">Comprar en Amazon <ArrowUpRight size={17}/></a><a className="light-link" href="/libertad-en-los-andes/">Ver la página del libro</a></div></div></div></section>
+      <section id="libro" className="book-section"><div className="container book-grid"><div className="book-cover"><img src="/tapa-libertad.webp" alt="Portada de Libertad en los Andes, de Pedro Guzmán Ramos" width="559" height="794" loading="lazy" /></div><div className="book-copy"><p className="eyebrow warm"><span></span> Ensayo · 2026</p><h2>Libertad<br /><i>en los Andes.</i></h2><p>Nos dijeron que la libertad llegó en barco, de afuera, escrita en otro idioma y pensada por señores de peluca. Mentira. La libertad ya estaba aquí, en el ayni que techa la casa sin contrato, en la feria que se ordena sin amo y en la ronda que hace justicia sin un juez lejano.</p><p>No es un libro de izquierda ni de derecha. Las dos son arriba.</p><div className="book-facts"><span>Pedro Jesús Guzmán Ramos</span><span>ISBN 978-612-03-2813-2</span><span>Impreso: 224 págs. · Digital: 216 págs.</span><span>27 capítulos</span></div><div className="chapter-list">{parts.map(([n, title, sub, range]) => <a className="chapter" href="/libertad-en-los-andes/#indice" key={n}><span>{n}</span><div><b>Parte {n}. {title}</b><small>{sub} · {range}</small></div><ArrowUpRight size={16}/></a>)}</div><div className="book-actions"><a className="button button-light" href="https://www.amazon.com/Libertad-en-los-Andes-Spanish-ebook/dp/B0HCXB894L/" target="_blank" rel="noreferrer">Comprar en Amazon <ArrowUpRight size={17}/></a><a className="light-link" href="/libertad-en-los-andes/">Índice y primeras páginas</a></div></div></div></section>
 
       <section id="participa" className="participate section-light"><div className="container participate-grid"><div><p className="eyebrow"><span></span> Participa</p><h2>Escríbenos<br /><i>desde tu región.</i></h2><p className="participate-note">Si quieres recibir los textos y participar en las conversaciones del proyecto, escríbenos directamente.</p></div><div className="join-card"><p>Recibe nuevos artículos, debates y convocatorias.</p><a className="button button-dark" href="mailto:hola@liberalismocomunal.org?subject=Quiero%20participar">Escribir a hola@liberalismocomunal.org <ArrowUpRight size={17}/></a></div></div></section>
     </main>
-    <footer><div className="container footer-inner"><a className="brand footer-brand" href="#inicio"><span className="brand-mark">↗</span><span>liberalismo<br/><em>comunal</em></span></a><p>Pedro Jesús Guzmán Ramos · Liberalismo peruano desde abajo</p><div><a href="#doctrina">Doctrina</a><a href="#autor">Autor</a><a href="#biblioteca">Biblioteca</a><a href="/ensayos/">Ensayos</a><a href="/proyecto/">Proyecto</a><a href="/contacto/">Contacto</a><a href="/privacidad/">Privacidad</a><a href="/aviso-legal/">Aviso legal</a></div></div></footer>
+    <footer><div className="container footer-inner"><a className="brand footer-brand" href="#inicio"><span className="brand-mark">↗</span><span>liberalismo<br/><em>comunal</em></span></a><p>Pedro Jesús Guzmán Ramos · Liberalismo peruano desde abajo</p><div><a href="#doctrina">Doctrina</a><a href="#autor">Autor</a><a href="#biblioteca">Biblioteca</a><a href="/manifiesto/">Manifiesto</a><a href="/ensayos/">Ensayos</a><a href="/proyecto/">Proyecto</a><a href="/prensa/">Prensa</a><a href="/contacto/">Contacto</a><a href="/privacidad/">Privacidad</a><a href="/aviso-legal/">Aviso legal</a></div></div></footer>
   </>
 }
 
