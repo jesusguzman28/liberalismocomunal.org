@@ -1,4 +1,33 @@
+# liberalismocomunal.org: todo el sitio es público y se puede indexar y citar.
 User-agent: *
+Allow: /
+
+# Buscadores y asistentes de IA: bienvenidos a leer y citar con enlace.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://liberalismocomunal.org/sitemap.xml

@@ -10,7 +10,11 @@ const outDir = join(root, 'public', 'ensayos')
 const sitemapPath = join(root, 'public', 'sitemap.xml')
 const siteUrl = 'https://liberalismocomunal.org'
 
-const PAGE_HEAD = ({ title, description, canonical }) => `<!doctype html><html lang="es-PE"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-Q20SJXYPDR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-Q20SJXYPDR');</script><script src="/analytics.js" defer></script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index, follow"><title>${esc(title)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${canonical}"><meta property="og:type" content="article"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}"><style>body{max-width:780px;margin:0 auto;padding:60px 24px;font:18px/1.7 Arial;color:#132d2d;background:#f4f1e9}h1{font:700 44px/1.15 Georgia}h2{font:700 26px Georgia;color:#e7653e;margin-top:2em}a{color:#e7653e}nav{font-weight:bold;margin-bottom:50px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}p{color:#4e625d}blockquote{margin:1.6em 0;padding:0 0 0 20px;border-left:3px solid #e7653e;font:italic 22px/1.5 Georgia;color:#173536}.meta{font:14px monospace;text-transform:uppercase;color:#e7653e;letter-spacing:.03em;margin-bottom:8px}.essay-list{list-style:none;padding:0}.essay-list li{padding:28px 0;border-bottom:1px solid #dcd6c4}.essay-list h3{font:700 26px Georgia;margin:6px 0}article p{margin:1.1em 0}article ul{margin:1.1em 0;padding-left:22px}article li{margin:.5em 0;color:#4e625d}</style></head><body>`
+const PAGE_HEAD = ({ title, description, canonical, jsonld = '', published = '' }) => `<!doctype html><html lang="es-PE"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-Q20SJXYPDR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-Q20SJXYPDR');</script><script src="/analytics.js" defer></script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index, follow"><title>${esc(title)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${canonical}"><meta property="og:type" content="article"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}"><meta property="og:locale" content="es_PE"><meta property="og:site_name" content="Liberalismo Comunal"><meta property="og:image" content="${siteUrl}/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">${published ? `<meta property="article:published_time" content="${published}">` : ''}<meta name="twitter:card" content="summary_large_image"><meta name="twitter:creator" content="@pjguzmanr"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(description)}"><meta name="twitter:image" content="${siteUrl}/og.png"><meta name="author" content="Pedro Jesús Guzmán Ramos"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="Ensayos de Liberalismo Comunal" href="${siteUrl}/feed.xml">${jsonld ? `<script type="application/ld+json">${jsonld}</script>` : ''}<style>body{max-width:780px;margin:0 auto;padding:60px 24px;font:18px/1.7 Arial;color:#132d2d;background:#f4f1e9}h1{font:700 44px/1.15 Georgia}h2{font:700 26px Georgia;color:#e7653e;margin-top:2em}a{color:#e7653e}nav{font-weight:bold;margin-bottom:50px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}p{color:#4e625d}blockquote{margin:1.6em 0;padding:0 0 0 20px;border-left:3px solid #e7653e;font:italic 22px/1.5 Georgia;color:#173536}.meta{font:14px monospace;text-transform:uppercase;color:#e7653e;letter-spacing:.03em;margin-bottom:8px}.essay-list{list-style:none;padding:0}.essay-list li{padding:28px 0;border-bottom:1px solid #dcd6c4}.essay-list h3{font:700 26px Georgia;margin:6px 0}article p{margin:1.1em 0}article ul{margin:1.1em 0;padding-left:22px}article li{margin:.5em 0;color:#4e625d}</style></head><body>`
+
+const ORG = { '@type': 'Organization', '@id': `${siteUrl}/#organizacion`, name: 'Liberalismo Comunal', url: `${siteUrl}/`, logo: `${siteUrl}/favicon.svg` }
+const AUTOR = { '@type': 'Person', '@id': `${siteUrl}/#autor`, name: 'Pedro Jesús Guzmán Ramos', url: `${siteUrl}/pedro-jesus-guzman-ramos/` }
+const ld = graph => JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c')
 
 const BOOK_BOX = `<aside style="margin-top:56px;padding:26px 24px;background:#132d2d;color:#f4f1e9;display:flex;gap:22px;align-items:center;flex-wrap:wrap"><img src="/tapa-libertad.png" alt="Portada de Libertad en los Andes" width="90" height="128" style="box-shadow:6px 6px 0 rgba(0,0,0,.25)"><div style="flex:1;min-width:220px"><span style="font:12px monospace;text-transform:uppercase;color:#e4a83c">El libro</span><p style="font:700 24px/1.2 Georgia;color:#f4f1e9;margin:6px 0">Libertad en los Andes</p><p style="color:#b8c5bb;margin:0 0 12px;font-size:16px">La libertad ya era nuestra: el ayni, la minka, la feria y la ronda como formas de libertad. Por Pedro Jesús Guzmán Ramos.</p><a href="/libertad-en-los-andes/" style="color:#e4a83c;font-weight:bold">Conocer el libro →</a> · <a href="https://www.amazon.com/Libertad-en-los-Andes-Spanish-ebook/dp/B0HCXB894L/" style="color:#f4f1e9">Comprar en Amazon ↗</a></div></aside>`
 
@@ -89,13 +93,41 @@ for (const e of ensayos) {
   const dir = join(outDir, e.slug)
   mkdirSync(dir, { recursive: true })
   const canonical = `${siteUrl}/ensayos/${e.slug}/`
-  const page = `${PAGE_HEAD({ title: `${e.title} | Liberalismo Comunal`, description: e.resumen, canonical })}<nav><a href="/">Liberalismo Comunal</a><a href="/ensayos/">← Todos los ensayos</a></nav><article><div class="meta">${fmtFechaLarga(e.fecha)}${e.hora ? ` · ${e.hora}` : ''} · Publicado por ${esc(e.autor)}</div><h1>${esc(e.title)}</h1>${e.html}</article>${BOOK_BOX}</body></html>`
+  const iso = `${e.fecha}T${e.hora || '00:00'}:00-05:00`
+  const jsonld = ld([
+    { '@type': 'BlogPosting', headline: e.title, description: e.resumen, inLanguage: 'es', url: canonical, mainEntityOfPage: canonical, image: `${siteUrl}/og.png`, datePublished: iso, dateModified: iso, author: { '@id': AUTOR['@id'] }, publisher: { '@id': ORG['@id'] }, isPartOf: { '@type': 'Blog', name: 'Ensayos de Liberalismo Comunal', url: `${siteUrl}/ensayos/` } },
+    ORG, AUTOR,
+    { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Liberalismo Comunal', item: `${siteUrl}/` }, { '@type': 'ListItem', position: 2, name: 'Ensayos', item: `${siteUrl}/ensayos/` }, { '@type': 'ListItem', position: 3, name: e.title, item: canonical }] },
+  ])
+  const page = `${PAGE_HEAD({ title: `${e.title} | Liberalismo Comunal`, description: e.resumen, canonical, jsonld, published: iso })}<nav><a href="/">Liberalismo Comunal</a><a href="/ensayos/">← Todos los ensayos</a></nav><article><div class="meta">${fmtFechaLarga(e.fecha)}${e.hora ? ` · ${e.hora}` : ''} · Publicado por ${esc(e.autor)}</div><h1>${esc(e.title)}</h1>${e.html}</article>${BOOK_BOX}</body></html>`
   writeFileSync(join(dir, 'index.html'), page)
 }
 
 const listItems = ensayos.map(e => `<li><div class="meta">${fmtFechaLarga(e.fecha)}${e.hora ? ` · ${e.hora}` : ''} · ${esc(e.autor)}</div><h3><a href="/ensayos/${e.slug}/">${esc(e.title)}</a></h3><p>${esc(e.resumen)}</p></li>`).join('\n')
-const indexPage = `${PAGE_HEAD({ title: 'Ensayos | Liberalismo Comunal', description: 'Ensayos breves sobre la coyuntura peruana desde la doctrina de Liberalismo Comunal, escritos por Pedro Jesús Guzmán Ramos.', canonical: `${siteUrl}/ensayos/` })}<nav><a href="/">Liberalismo Comunal</a></nav><span class="meta">Ensayos</span><h1>Coyuntura, leída desde abajo</h1><p>Notas cortas sobre la actualidad peruana, escritas al calor del día, desde los principios de Liberalismo Comunal.</p><ul class="essay-list">${listItems}</ul>${BOOK_BOX}</body></html>`
+const indexDesc = 'Ensayos breves sobre la coyuntura peruana desde la doctrina de Liberalismo Comunal, escritos por Pedro Jesús Guzmán Ramos.'
+const indexLd = ld([
+  { '@type': 'Blog', '@id': `${siteUrl}/ensayos/#blog`, name: 'Ensayos de Liberalismo Comunal', description: indexDesc, inLanguage: 'es', url: `${siteUrl}/ensayos/`, author: { '@id': AUTOR['@id'] }, publisher: { '@id': ORG['@id'] }, blogPost: ensayos.map(e => ({ '@type': 'BlogPosting', headline: e.title, url: `${siteUrl}/ensayos/${e.slug}/`, datePublished: `${e.fecha}T${e.hora || '00:00'}:00-05:00` })) },
+  ORG, AUTOR,
+])
+const indexPage = `${PAGE_HEAD({ title: 'Ensayos | Liberalismo Comunal', description: indexDesc, canonical: `${siteUrl}/ensayos/`, jsonld: indexLd })}<nav><a href="/">Liberalismo Comunal</a></nav><span class="meta">Ensayos</span><h1>Coyuntura, leída desde abajo</h1><p>Notas cortas sobre la actualidad peruana, escritas al calor del día, desde los principios de Liberalismo Comunal.</p><ul class="essay-list">${listItems}</ul>${BOOK_BOX}</body></html>`
 writeFileSync(join(outDir, 'index.html'), indexPage)
+
+// --- feed.xml (RSS 2.0) para lectores y buscadores ---
+const rfc822 = e => new Date(`${e.fecha}T${e.hora || '00:00'}:00-05:00`).toUTCString()
+const feedItems = ensayos.map(e => `  <item><title>${esc(e.title)}</title><link>${siteUrl}/ensayos/${e.slug}/</link><guid isPermaLink="true">${siteUrl}/ensayos/${e.slug}/</guid><pubDate>${rfc822(e)}</pubDate><dc:creator>${esc(e.autor)}</dc:creator><description>${esc(e.resumen)}</description></item>`).join('\n')
+const feed = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title>Ensayos de Liberalismo Comunal</title>
+  <link>${siteUrl}/ensayos/</link>
+  <atom:link href="${siteUrl}/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>${esc(indexDesc)}</description>
+  <language>es-PE</language>
+${feedItems}
+</channel>
+</rss>
+`
+writeFileSync(join(root, 'public', 'feed.xml'), feed)
 
 // --- sitemap.xml: reemplaza el bloque gestionado entre marcadores ---
 if (existsSync(sitemapPath)) {

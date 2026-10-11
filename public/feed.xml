@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title>Ensayos de Liberalismo Comunal</title>
+  <link>https://liberalismocomunal.org/ensayos/</link>
+  <atom:link href="https://liberalismocomunal.org/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Ensayos breves sobre la coyuntura peruana desde la doctrina de Liberalismo Comunal, escritos por Pedro Jesús Guzmán Ramos.</description>
+  <language>es-PE</language>
+  <item><title>El poder quiso un atajo. Esta vez no le salió</title><link>https://liberalismocomunal.org/ensayos/2026-09-11-congreso-frena-facultades-legislativas/</link><guid isPermaLink="true">https://liberalismocomunal.org/ensayos/2026-09-11-congreso-frena-facultades-legislativas/</guid><pubDate>Fri, 11 Sep 2026 13:55:00 GMT</pubDate><dc:creator>Pedro Jesús Guzmán Ramos</dc:creator><description>Seis comisiones frenaron las facultades legislativas de Fujimori. Dos las preside su propio partido. Los votos, los nombres y las bancadas, sin adornos.</description></item>
+</channel>
+</rss>

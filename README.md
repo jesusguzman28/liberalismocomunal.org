@@ -110,17 +110,21 @@ Los registros DNS del dominio deben conservar los registros MX del proveedor de 
 
 ## Contenido y páginas
 
-- `/` — Plataforma principal.
-- `/proyecto/` — Presentación del proyecto.
-- `/pedro-jesus-guzman-ramos/` — Página oficial del autor.
-- `/liberalismo-peruano/` — Historia e ideas del liberalismo peruano.
-- `/liberalismo-comunal/` — Doctrina del liberalismo comunal.
-- `/libertarismo-peru/` — Libertarismo en el Perú.
-- `/liberalismo-economico-peru/` — Mercado, propiedad y emprendimiento.
-- `/descentralizacion-peru/` — Autogobierno y territorio.
-- `/contacto/` — Información de contacto.
-- `/privacidad/` — Política de privacidad.
-- `/aviso-legal/` — Aviso legal.
+- `/`: Plataforma principal.
+- `/proyecto/`: Presentación del proyecto.
+- `/pedro-jesus-guzman-ramos/`: Página oficial del autor.
+- `/liberalismo-peruano/`: Historia e ideas del liberalismo peruano.
+- `/liberalismo-comunal/`: Doctrina del liberalismo comunal.
+- `/libertarismo-peru/`: Libertarismo en el Perú.
+- `/liberalismo-economico-peru/`: Mercado, propiedad y emprendimiento.
+- `/descentralizacion-peru/`: Autogobierno y territorio.
+- `/genealogia-liberalismo-comunal/`: Antecedentes peruanos y universales de la doctrina.
+- `/ensayos/`: Ensayos de coyuntura (se generan desde `content/ensayos/`).
+- `/feed.xml`: RSS de los ensayos, generado en el build.
+- `/llms.txt`: Resumen del sitio para asistentes de IA.
+- `/contacto/`: Información de contacto.
+- `/privacidad/`: Política de privacidad.
+- `/aviso-legal/`: Aviso legal.
 
 ## Mantenimiento recomendado
 
