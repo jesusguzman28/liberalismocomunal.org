@@ -11,6 +11,8 @@
     var text = (link.textContent || '').trim().slice(0, 80);
     if (href.indexOf('mailto:') === 0) {
       track('contact_email_click', { link_text: text, link_url: href.split('?')[0] });
+    } else if (/\.pdf($|\?)/.test(href)) {
+      track('sample_download', { link_url: href });
     } else if (href.indexOf('amazon.') !== -1) {
       track('book_purchase_click', { link_text: text, link_url: href });
     } else if (href.indexOf('x.com') !== -1 || href.indexOf('linkedin.com') !== -1) {
